@@ -1,4 +1,4 @@
-window.onload = function() {
+window.addEventListener("load", function() {
   var btnValChange = document.getElementById("btn-val-change");
   var btnToText = document.getElementById("btn-to-text");
 
@@ -21,9 +21,14 @@ window.onload = function() {
   span.onclick = function() {
     alert("I'm span!");
   };
-};
+});
 
-//step1에서의 문제를 해결했다. 이벤트 콜백 함수들을 모두 익명 함수로 교체했고
-//onload이벤트에 대한 콜백 함수도 익명 함수로 교체한 덕분에 그 익명 함수 안에 
-//콜백 함수들이 구현됐고 그래서 엘리먼트 객체를 onload이벤트 콜백 함수 scope에서 가져올 수 있게 됐고
-//다른 이벤트 콜백 함수들에서 참조할 수 있게 됐다. 
+//index.html파일을 보면 event.js를 먼저 쓰고 그 다음 test.js를 썼다.
+//이때 각 파일에 window.onload = function() {}과 같은 식으로 쓰면 안 된다.
+//그럼 window.onload이벤트에 처음에는 event.js의 익명 함수를 참조하지만 이후 test.js의 익명함수를 참조해서
+//event.js에서 정의한 기능들은 사라지게 된다. 
+
+//이런 문제를 해결하기 위해서 addEventListener를 사용하면 된다. 
+//이렇게 하면 리스너 안에 인자로 전달되는 함수의 코드가 모두 누적되게 된다. 
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./event.js"></script>
+  </head>
+  <body>
+    <!-- area1 -->
+    <section id="section1">
+      <h1>엘리먼트 노드의 속성 변경</h1>
+      <div>
+        <select class="select-img">
+          <option value="image1.jpg">img1</option>
+          <option value="image2.jpg">img2</option>
+          <option value="image3.jpg">img3</option>
+        </select>
+        <input class="btn-change" type="button" value="변경하기"/>
+      </div>
+      <div>
+        <img class="img" src="../images/image1.jpg" width="300px" height="200px"/>
+      </div>
+    </section>
+    <br>
+    <!-- area2 -->
+    <section id="section2">
+      <div>
+        <input class="src-input" list="img-list"/>
+        <datalist id="img-list">
+          <option value="image1.jpg">img1</option>
+          <option value="image2.jpg">img2</option>
+          <option value="image3.jpg">img3</option>
+        </datalist>
+        <input class="btn-change" type="button" value="변경하기"/>
+      </div>
+      <div>
+        <img class="img" src="../images/image1.jpg" width="300px" height="200px"/>
+      </div>
+    </section>
+  </body>
+</html>
