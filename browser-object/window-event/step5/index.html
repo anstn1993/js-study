@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Target</title>
+    <script src="./event.js"></script>
+</head>
+<body>
+    <section>
+        <h1>엘리먼트 노드의 기본 행위 막기</h1>
+        <table border="1" class="notice-table">
+            <thead>
+              <tr>
+                <td>번호</td>
+                <td>제목</td>
+                <td>작성일</td>
+                <td>작성자</td>
+                <td>조회수</td>
+                <td>관리</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><a href="1">자바스크립트란..</a></td>
+                <td>2019-01-25</td>
+                <td>mansoo</td>
+                <td>2</td>
+                <td>
+                    <a class="btn-sel" href="">선택</a>
+                    <a class="btn-edit" href="">수정</a>
+                    <a class="btn-del" href="">삭제</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>
+                  <a href="2">유투브에 끌려다니지 않으려고 했는데....ㅜㅜ..</a>
+                </td>
+                <td>2019-01-25</td>
+                <td>mansoo</td>
+                <td>0</td>
+                <td>
+                    <input type="button" class="btn-sel" value="선택">
+                    <input type="button" class="btn-edit" value="수정">
+                    <input type="button" class="btn-del" value="삭제">
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><a href="3">기본기가 튼튼해야....</a></td>
+                <td>2019-01-25</td>
+                <td>mansoo</td>
+                <td>1</td>
+                <td>
+                    <input type="button" class="btn-sel" value="선택">
+                    <input type="button" class="btn-edit" value="수정">
+                    <input type="button" class="btn-del" value="삭제">
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><a href="4">근데 조회수가 ㅜㅜ..</a></td>
+                <td>2019-01-25</td>
+                <td>mansoo</td>
+                <td>0</td>
+                <td>
+                    <input type="button" class="btn-sel" value="선택">
+                    <input type="button" class="btn-edit" value="수정">
+                    <input type="button" class="btn-del" value="삭제">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </section>
+</body>
+</html>
