@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Target</title>
+    <script src="./event.js"></script>
+    <style>      
+     .btn-file-trigger {
+         background: green;
+         border: 1px solid lightgreen;
+         border-radius: 5px;
+
+         padding: 5px 10px;
+         color: #ffffff;
+         cursor: pointer;
+         
+      }
+
+      .btn-file-trigger:hover {
+          background: limegreen;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>이벤트 트리거</h1>
+
+      <input type="file" class="btn-file" hidden/>
+      <span class="btn-file-trigger">파일 선택</span>
+    </section>
+  </body>
+</html>
