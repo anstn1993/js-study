@@ -38,4 +38,5 @@ window.addEventListener("load", function() {
 });
 
 /*
+이벤트 캡처링을 하지 않으면 박스의 컨테이너 영역을 벗어나는 순간에 
 */
